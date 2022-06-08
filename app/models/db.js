@@ -1,11 +1,11 @@
 const mysql = require("mysql2");
-const dbConfig = require("../config/db.config");
+const dbConfig = require("../config/db.config.js");
 // Create a connection to the database
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'password',
-  database: 'nodemysqlrestapi'
+  host: dbConfig.HOST,
+  user: dbConfig.USER,
+  password: dbConfig.PASSWORD,
+  database: dbConfig.DATABASE
 });
 // open the MySQL connection
 connection.connect((err) => {

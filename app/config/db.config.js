@@ -1,6 +1,6 @@
 module.exports = {
   HOST: "localhost",
-  USERNAME: "root",
+  USER: "root",
   PASSWORD: "password",
   DATABASE: "nodemysqlrestapi"
 };
